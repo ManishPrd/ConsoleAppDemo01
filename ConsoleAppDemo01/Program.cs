@@ -21,16 +21,16 @@ namespace ConsoleAppDemo01
         public static void  DoSomething()
         {
             // Do nothing because of X and Y.
-            Console.WriteLine("Do Work");
+            //Console.WriteLine("Do Work");
         }
 
         public static void GetGuid(byte[] bytes)
         {
-            var g1 = Guid.Empty;
-            var g2 = Guid.NewGuid();
-            var g3 = new Guid(bytes);
+            //var g1 = Guid.Empty;
+            //var g2 = Guid.NewGuid();
+            //var g3 = new Guid(bytes);
 
-            //var g = new Guid();
+            var g = new Guid();
         }
         private static void SomeMethod(string val)
         {
