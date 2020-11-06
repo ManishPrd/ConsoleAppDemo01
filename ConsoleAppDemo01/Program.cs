@@ -8,23 +8,41 @@ namespace ConsoleAppDemo01
         {
             
             Console.WriteLine("Hello World!");
-            someMethod("Good");
-
+      
+            SomeMethod("Good");
+            DoSomething();
+            Console.ReadLine();
         }
 
-        private static void someMethod(string val)
+        public static void  DoSomething()
         {
+            // Do nothing because of X and Y.
+            //Console.WriteLine("Do Work");
+        }
+
+        public static void GetGuid(byte[] bytes)
+        {
+            //var g1 = Guid.Empty;
+            //var g2 = Guid.NewGuid();
+            //var g3 = new Guid(bytes);
+
+            var g = new Guid();
+        }
+        private static void SomeMethod(string val)
+        {
+
             bool blnWork = true;
-            if (val == "Good")
-                blnWork = true;
-            else
-                blnWork = false;
+
+            //if (val == "Good")
+            //    blnWork = true;
+            //else
+            //    blnWork = false;
             if (blnWork)
                 Console.WriteLine("Good Work");
             else
                 Console.WriteLine("Needs Inprovement");
 
-            Console.ReadLine();
+            
         }
     }
 }
