@@ -37,10 +37,10 @@ namespace ConsoleAppDemo01
 
             bool blnWork = true;
 
-            //if (val == "Good")
-            //    blnWork = true;
-            //else
-            //    blnWork = false;
+            if (val == "Good")
+                blnWork = true;
+            else
+                blnWork = false;
             if (blnWork)
                 Console.WriteLine("Good Work");
             else
